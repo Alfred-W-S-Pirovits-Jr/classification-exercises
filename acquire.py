@@ -1,3 +1,11 @@
+import numpy as np
+import seaborn as sns
+import scipy.stats as stats
+import pandas as pd
+import matplotlib.pyplot as plt
+from pydataset import data
+import os
+
 
 def get_titanic_data():
     filename = 'titanic.csv'
@@ -14,6 +22,7 @@ def get_titanic_data():
         return titanic_db
     
 def get_iris_data():
+    
     filename = 'iris.csv'
     
     if os.path.isfile(filename):
